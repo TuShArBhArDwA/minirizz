@@ -37,7 +37,7 @@ MiniRizz is a premium, AI-powered tool designed to help you craft the perfect wi
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/minirizz.git
+    git clone https://github.com/TuShArBhArDwA/minirizz.git
     cd minirizz
     ```
 
@@ -66,6 +66,17 @@ MiniRizz is a premium, AI-powered tool designed to help you craft the perfect wi
 *   `src/components`: React components (UI, Landing, Logic).
 *   `src/lib`: Utility functions.
 
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| [High-Level Design (HLD)](docs/HLD.md) | System architecture, components, and data flow |
+| [Low-Level Design (LLD)](docs/LLD.md) | Database schema, API endpoints, and execution flow |
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## Connect with me
+
+If you'd like to connect, feel free to reach out — [Click here](https://minianonlink.vercel.app/tusharbhardwaj)
