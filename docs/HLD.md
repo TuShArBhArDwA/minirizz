@@ -9,20 +9,20 @@ The application follows a **Monolithic Client-Server Architecture** using the Ne
 ### 2.1 High-Level Diagram
 ```mermaid
 graph TD
-    User[User (Browser)] <-->|HTTPS| CDN[Vercel Edge Network]
-    CDN <-->|Next.js App Router| App[MiniRizz Application]
+    User["User (Browser)"] <-->|HTTPS| CDN["Vercel Edge Network"]
+    CDN <-->|"Next.js App Router"| App["MiniRizz Application"]
     
     subgraph "MiniRizz Application"
-        UI[Frontend UI (React/Tailwind)]
-        API[Backend API (/api/generate)]
+        UI["Frontend UI (React/Tailwind)"]
+        API["Backend API (/api/generate)"]
     end
     
-    UI -->|JSON Request| API
-    API -->|Attempt 1| Gemini[Google Gemini AI]
-    API -->|Attempt 2 (Failover)| Groq[Groq Llama 3]
+    UI -->|"JSON Request"| API
+    API -->|"Attempt 1"| Gemini["Google Gemini AI"]
+    API -->|"Attempt 2 (Failover)"| Groq["Groq Llama 3"]
     Gemini -->|Success| API
     Groq -->|Success| API
-    API -->|JSON Response| UI
+    API -->|"JSON Response"| UI
 ```
 
 ## 3. Key Components
