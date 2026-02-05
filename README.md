@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MiniRizz ✨
 
-## Getting Started
+**Your AI Wingman for the Digital Age.**
 
-First, run the development server:
+MiniRizz is a premium, AI-powered tool designed to help you craft the perfect witty, romantic, or savage responses for your chats. Upload a screenshot or paste text, and let our AI generate the "Rizz".
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![MiniRizz Banner](https://img.shields.io/badge/Status-Active-success?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌟 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*   **Multimodal Input:** Text or Screenshot analysis.
+*   **Mood-Based Modes:**
+    *   ✨ **Rizz** (Smooth/Flirty)
+    *   🔥 **Roast** (Savage/Witty)
+    *   😂 **Funny** (Humorous)
+    *   👻 **Ghost-Proof** (Engagement)
+*   **Visual "Flow" Results:** Results displayed in a beautiful Mind Map layout.
+*   **Multilingual:** Supports English, Hindi, and Hinglish.
+*   **Privacy Focused:** No data storage; processing is transient.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+*   **Frontend:** Next.js 14 (App Router), React, TypeScript
+*   **Styling:** Tailwind CSS, Shadcn UI
+*   **Animations:** Framer Motion
+*   **AI:** Google Gemini 1.5 Flash + Groq (Llama 3.3) for redundancy
+*   **Icons:** Lucide React
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
+*   Node.js 18+
+*   Google Gemini API Key
+*   Groq API Key (Optional, for failover)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/minirizz.git
+    cd minirizz
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  **Set up Environment Variables:**
+    Create a `.env.local` file:
+    ```env
+    GEMINI_API_KEY=your_gemini_api_key_here
+    GROQ_API_KEY=your_groq_api_key_here
+    ```
+
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+5.  Open [http://localhost:3000](http://localhost:3000) with your browser.
+
+## 📂 Project Structure
+
+*   `src/app`: Next.js pages and API routes.
+*   `src/components`: React components (UI, Landing, Logic).
+*   `src/lib`: Utility functions.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
